@@ -6,4 +6,4 @@ Starting arp-scan 1.8.4 with 256 hosts (http://www.nta-monitor.com/tools/arp-sca
 10.20.69.29	64:bc:0c:65:43:22	(Unknown)
 
 4 packets received by filter, 0 packets dropped by kernel
-Ending arp-scan 1.8.4: 256 hosts scanned in 2.279 seconds (112.33 hosts/sec). 4 responded
+Ending arp-scan 1.8.4: 256 hosts scanned in 2.264 seconds (113.07 hosts/sec). 4 responded
