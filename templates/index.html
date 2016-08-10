@@ -60,15 +60,19 @@
         </div>
         <!-- /.container -->
     </nav>
-<div class="R">
-<p id ="1" class="bg-primary">...</p>
+<div id="1">
+
 </div class="A">
 <div><p id="2"class="bg-success">...</p>
 </div>
 <div class="O">
 <p id="3" class="bg-info">...</p>
-</div?
- 
+</div>
+
+<div>
+    <p id ="4" class="bg-primary">...</p>
+</div>
+
     <!-- Page Content -->
     <!--<div class="container">
         <div class="row">
@@ -94,11 +98,19 @@
         var Roos_is_home=(json[0].room);
         var AJ_is_home=(json[1].room);
         var Orion_is_home=(json[2].room);
-        document.getElementById('1').innerHTML = Roos_is_home;
+        var Grace_is_home=(json[3].room);
+
+        var mydiv = document.getElementById("1");
+var aTag = document.createElement('a');
+aTag.setAttribute('class',"bg-primary");
+aTag.innerHTML = Roos_is_home;
+        mydiv.appendChild(aTag);
+        //document.getElementById('1').innerHTML = "<p id ="1" class="bg-primary">...</p>";
         document.getElementById("2").innerHTML= AJ_is_home;
         document.getElementById("3").innerHTML= Orion_is_home;
+        document.getElementById("4").innerHTML= Grace_is_home;
 
-        alert( "Load was performed." );
+        //alert( "Load was performed." );
         });
     }
     </script>
