@@ -60,14 +60,15 @@
         </div>
         <!-- /.container -->
     </nav>
-<div>
-<p class="bg-primary">...</p>
+<div class="R">
+<p id ="1" class="bg-primary">...</p>
+</div class="A">
+<div><p id="2"class="bg-success">...</p>
 </div>
-<div><p class="bg-success">...</p>
-</div>
-<p class="bg-info">...</p>
-  <p class="bg-warning">...</p>
-  <p class="bg-danger">...</p>
+<div class="O">
+<p id="3" class="bg-info">...</p>
+</div?
+ 
     <!-- Page Content -->
     <!--<div class="container">
         <div class="row">
@@ -85,6 +86,17 @@
     <script>function get_info()
     {
         $.get( "/scan", function( data ) {
+            var json = JSON.parse(data);
+
+
+        console.log(json);
+        //console.log(json.rooms[3])
+        var Roos_is_home=(json[0].room);
+        var AJ_is_home=(json[1].room);
+        var Orion_is_home=(json[2].room);
+        document.getElementById('1').innerHTML = Roos_is_home;
+        document.getElementById("2").innerHTML= AJ_is_home;
+        document.getElementById("3").innerHTML= Orion_is_home;
 
         alert( "Load was performed." );
         });
