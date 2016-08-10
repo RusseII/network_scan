@@ -1,9 +1,0 @@
-[sudo] password for rratcliffe: Interface: wlp3s0, datalink type: EN10MB (Ethernet)
-Starting arp-scan 1.8.4 with 256 hosts (http://www.nta-monitor.com/tools/arp-scan/)
-10.20.69.1	00:18:0a:02:99:26	Meraki, Inc.
-10.20.69.26	0c:8b:fd:5f:3d:22	Intel Corporate
-10.20.69.27	12:b3:b7:d2:e2:3d	(Unknown)
-10.20.69.29	64:bc:0c:65:43:22	(Unknown)
-
-4 packets received by filter, 0 packets dropped by kernel
-Ending arp-scan 1.8.4: 256 hosts scanned in 2.250 seconds (113.78 hosts/sec). 4 responded
