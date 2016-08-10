@@ -1,0 +1,15 @@
+Interface: wlp4s0, datalink type: EN10MB (Ethernet)
+Starting arp-scan 1.8.4 with 256 hosts (http://www.nta-monitor.com/tools/arp-scan/)
+192.168.1.69	00:16:6b:19:fb:ee	Samsung Electronics
+192.168.1.66	ac:3c:0b:00:fb:03	Apple
+192.168.1.73	dc:86:d8:db:04:3e	(Unknown)
+192.168.1.112	c4:27:95:69:8c:52	(Unknown)
+192.168.1.113	c4:27:95:69:8b:48	(Unknown)
+192.168.1.147	10:77:b1:0d:8b:36	Samsung Electronics Co.,LTD
+192.168.1.89	cc:af:78:47:15:8f	Hon Hai Precision Ind. Co.,Ltd.
+192.168.1.120	6c:ad:f8:5c:3f:a4	(Unknown)
+192.168.1.254	6c:ca:08:07:53:90	(Unknown)
+192.168.1.175	60:f1:89:8a:3b:64	(Unknown)
+
+10 packets received by filter, 0 packets dropped by kernel
+Ending arp-scan 1.8.4: 256 hosts scanned in 2.649 seconds (96.64 hosts/sec). 10 responded

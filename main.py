@@ -1,5 +1,4 @@
-#from engine.engine import Engine
-import engine.engine
+from engine.engine import Engine
 from flask import Flask, request, redirect, url_for, render_template, send_from_directory
 
 
@@ -14,6 +13,7 @@ def show_page():
 @app.route('/scan',methods=['GET'])
 def scan():
     engine=Engine()
+    print engine.execute()
     return engine.execute()
 
 if __name__ == "__main__":
