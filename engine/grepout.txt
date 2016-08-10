@@ -1,0 +1,2 @@
+192.168.1.69	00:16:6b:19:fb:ee	Samsung Electronics
+192.168.1.147	10:77:b1:0d:8b:36	Samsung Electronics Co.,LTD
