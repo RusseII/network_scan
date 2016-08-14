@@ -30,48 +30,53 @@
 <body onload="get_info();">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-<div id="1">
 
-</div class="A">
-<div><p id="2"class="bg-success">...</p>
+<div class="row">
+
+    <div class="col-xs-5">
 </div>
-<div class="O">
-<p id="3" class="bg-info">...</p>
+<div class="col-xs-2" id="1">
+</div>
+<div class="col-xs-5">
+</div>
 </div>
 
-<div>
-    <p id ="4" class="bg-primary">...</p>
+
+
+<div class="row">
+
+    <div class="col-xs-5">
 </div>
+<div class="col-xs-2" id="2">
+</div>
+<div class="col-xs-5">
+</div>
+</div>
+
+
+
+
+<div class="row">
+
+    <div class="col-xs-5">
+</div>
+<div class="col-xs-2" id="3">
+</div>
+<div class="col-xs-5">
+</div>
+</div>
+
+
+<div class="row">
+
+    <div class="col-xs-5">
+</div>
+<div class="col-xs-2" id="5">
+</div>
+<div class="col-xs-5">
+</div>
+</div>
+
 
     <!-- Page Content -->
     <!--<div class="container">
@@ -100,18 +105,47 @@
         var Orion_is_home=(json[2].room);
         var Grace_is_home=(json[3].room);
 
-        var mydiv = document.getElementById("1");
-var aTag = document.createElement('a');
-aTag.setAttribute('class',"bg-primary");
-aTag.innerHTML = Roos_is_home;
-        mydiv.appendChild(aTag);
-        //document.getElementById('1').innerHTML = "<p id ="1" class="bg-primary">...</p>";
-        document.getElementById("2").innerHTML= AJ_is_home;
-        document.getElementById("3").innerHTML= Orion_is_home;
-        document.getElementById("4").innerHTML= Grace_is_home;
+        var Russell = document.getElementById("1");
+        var Andrew=document.getElementById("2");
+        var Orion=document.getElementById("3");
+        var Grace=document.getElementById("5");
+        Andrew.setAttribute('class',"bg-primary col-xs-2 text-center");
+        Orion.setAttribute('class',"bg-primary col-xs-2 text-center");
+        Russell.setAttribute('class',"bg-primary col-xs-2 text-center");
+        Grace.setAttribute('class',"bg-primary col-xs-2 text-center");
+if (Roos_is_home.indexOf('not')>0)
+{
+    Russell.setAttribute('class',"bg-danger col-xs-2 text-center");
+}
+
+if (AJ_is_home.indexOf('not')>0)
+{
+    Andrew.setAttribute('class',"bg-danger col-xs-2 text-center");
+}
+
+if (Orion_is_home.indexOf('not')>0)
+{
+    Orion.setAttribute('class',"bg-danger col-xs-2 text-center");
+}
+
+if (Grace_is_home.indexOf('not')>0)
+{
+    Grace.setAttribute('class',"bg-danger col-xs-2 text-center");
+}
+
+
+Russell.innerHTML = Roos_is_home;
+Andrew.innerHTML=AJ_is_home;
+Orion.innerHTML=Orion_is_home;
+Grace.innerHTML=Grace_is_home;
+
+
+
+
 
         //alert( "Load was performed." );
         });
+        setTimeout(get_info, 500);
     }
     </script>
     <script src="../static/js/jquery.js"></script>
